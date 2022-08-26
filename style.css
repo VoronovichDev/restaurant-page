@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap');
+
+/*reset*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+}
+
+/*content*/
+
+#content {
+   width: 100vw;
+   height: 100vh;
+   background: url(img/restaurant-background.jpg);
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+/*navigation*/
+nav {
+   background-color: rgba(40, 40, 40, 0.823);
+
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 70px;
+}
+
+nav ul {
+   width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+}
+
+.navigation > div > a {
+   transition: all 0.2s ease;
+   color: rgb(202, 202, 202);
+   text-decoration: none;
+}
+
+.navigation > div {
+   transition: all 0.2s ease;
+}
+
+.navigation > div > a:hover {
+   color: rgb(255, 255, 255);
+}
+
+.navigation > div:hover {
+   transform: scale(1.1);
+}
+
+/*mainblock*/
+main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding: 30px 0;
+   align-items: center;
+   color: rgb(202, 202, 202);
+   background-color: rgba(40, 40, 40, 0.823);
+}
+
+main h1 {
+   font-size: 5rem;
+   position: relative;
+}
+
+main h1::after {
+   content: '';
+   display: block;
+   position: absolute;
+   width: 50%;
+   left: 25%;
+   height: 3px;
+   background-color: #fff892;
+   margin: 10px 0 0 0;
+}
+main p {
+   font-size: 1.5rem;
+}
+
+main button {
+   width: 100px;
+   height: 40px;
+   background-color: #fff892;
+   border: none;
+   border-radius: 5px;
+   font-weight: 400;
+   cursor: pointer;
+}
+main button:hover {
+   font-weight: 700;
+}
+
+/*footer*/
+footer {
+   background-color: rgba(40, 40, 40, 0.823);
+
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 70px;
+   color: rgb(202, 202, 202);
+}
