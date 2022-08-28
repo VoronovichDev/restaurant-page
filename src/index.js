@@ -2,9 +2,9 @@ import Footer from './Footer'
 import Navigation from './Navigation'
 import MainContent from "./MainContent"
 import Menu from "./Menu"
+import History from './History'
 
 const content = document.querySelector('#content')
-
 
 const renderHomePage = () => {
    content.innerHTML = ''
@@ -19,7 +19,12 @@ const renderMenuPage = () => {
    content.appendChild(Menu())
    content.appendChild(Footer())
 }
-
+const renderHistoryPage = () => {
+   content.innerHTML = ''
+   content.appendChild(Navigation())
+   content.appendChild(History())
+   content.appendChild(Footer())
+}
 
 document.addEventListener("click", (e) => {
    const link = e.target.id;
@@ -31,8 +36,10 @@ document.addEventListener("click", (e) => {
       case 'to_menu':
          renderMenuPage();
          break
+      case 'history':
+         renderHistoryPage()
+         break
    }
 });
-
 
 renderHomePage()
