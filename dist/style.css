@@ -174,3 +174,19 @@ main.menu::-webkit-scrollbar-thumb {
    width: 100px;
    height: 100px;
 }
+
+/*history block*/
+hr.about__us {
+   border: none;
+   background-color: #fff892;
+   height: 3px;
+   width: 30%;
+}
+
+main .history__text {
+   max-width: 50%;
+}
+
+main h2 {
+   font-size: 2.3rem;
+}
